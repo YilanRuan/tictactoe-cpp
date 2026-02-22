@@ -139,30 +139,35 @@ Build solution
 
 Run executable
 
-
 ## Project Structure
+
+```
 TicTacToe/
 │
-├── TicTacToeBoard.hpp # Board interface
-├── TicTacToeBoard.cpp # Board implementation
-├── TicTacToeGame.hpp # Game controller interface
-├── TicTacToeGame.cpp # Game controller implementation
+├── TicTacToeBoard.hpp      # Board interface
+├── TicTacToeBoard.cpp      # Board implementation
+├── TicTacToeGame.hpp       # Game controller interface
+├── TicTacToeGame.cpp       # Game controller implementation
 │
-├── TestTicTacToeBoard.cpp # Board logic tests
-├── TestTicTacToeGame.cpp # Gameplay flow tests
+├── TestTicTacToeBoard.cpp  # Board logic tests
+├── TestTicTacToeGame.cpp   # Gameplay flow tests
 │
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
 ## Example Gameplay
+
+```
  X | O | X
 -----------
  O | X |  
 -----------
    |   | O
+```
+
 
 The architecture supports straightforward expansion.
 
@@ -202,6 +207,7 @@ Author
 
 Yilan Ruan
 GitHub: https://github.com/YilanRuan
+
 
 
 
