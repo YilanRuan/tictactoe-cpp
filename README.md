@@ -128,7 +128,7 @@ Separating rule logic from control flow allows deterministic testing of board be
 
 Compile:
 ```bash
-g++ TicTacToeBoard.cpp TicTacToeGame.cpp main.cpp -o tictactoe
+g++ TicTacToeBoard.cpp TicTacToeGame.cpp main.cpp -o tictactoe.exe
 ./tictactoe
 ```
 Visual Studio (MSVC)
@@ -150,7 +150,7 @@ TicTacToe/
 ├── TicTacToeGame.cpp       # Game controller implementation
 │
 ├── TestTicTacToeBoard.cpp  # Board logic tests
-├── TestTicTacToeGame.cpp   # Gameplay flow tests
+├── main.cpp   # Gameplay flow tests
 │
 ├── README.md
 └── .gitignore
@@ -207,6 +207,7 @@ Author
 
 Yilan Ruan
 GitHub: https://github.com/YilanRuan
+
 
 
 
