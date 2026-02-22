@@ -258,7 +258,9 @@ bool TicTacToeBoard::tie() const {
 
 bool TicTacToeBoard::win(int r, int c) const{
     if(winByCol(r,c)|| winByRow(r,c)||winByDiagonal(r,c)){return true;} //utilizes previous functions to check if we have won
+    return false;
 }
+
 
 
         
