@@ -138,8 +138,6 @@ Open project solution
 Build solution
 
 Run executable
-
-Project Structure
 TicTacToe/
 │
 ├── TicTacToeBoard.hpp      # Board interface
@@ -152,6 +150,7 @@ TicTacToe/
 │
 ├── README.md
 └── .gitignore
+
 Example Gameplay
  X | O | X
 -----------
@@ -198,4 +197,5 @@ Author
 
 Yilan Ruan
 GitHub: https://github.com/YilanRuan
+
 
