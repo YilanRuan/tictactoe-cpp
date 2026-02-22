@@ -128,11 +128,9 @@ Separating rule logic from control flow allows deterministic testing of board be
 
 Compile:
 ```bash
-
-g++ *.cpp -o tictactoe
-Run:
-
+g++ TicTacToeBoard.cpp TicTacToeGame.cpp main.cpp -o tictactoe
 ./tictactoe
+```
 Visual Studio (MSVC)
 
 Open project solution
@@ -200,3 +198,4 @@ Author
 
 Yilan Ruan
 GitHub: https://github.com/YilanRuan
+
