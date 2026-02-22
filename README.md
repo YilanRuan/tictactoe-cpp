@@ -128,4 +128,75 @@ Separating rule logic from control flow allows deterministic testing of board be
 
 Compile:
 ```bash
+
 g++ *.cpp -o tictactoe
+Run:
+
+./tictactoe
+Visual Studio (MSVC)
+
+Open project solution
+
+Build solution
+
+Run executable
+
+Project Structure
+TicTacToe/
+│
+├── TicTacToeBoard.hpp      # Board interface
+├── TicTacToeBoard.cpp      # Board implementation
+├── TicTacToeGame.hpp       # Game controller interface
+├── TicTacToeGame.cpp       # Game controller implementation
+│
+├── TestTicTacToeBoard.cpp  # Board logic tests
+├── TestTicTacToeGame.cpp   # Gameplay flow tests
+│
+├── README.md
+└── .gitignore
+Example Gameplay
+ X | O | X
+-----------
+ O | X |  
+-----------
+   |   | O
+Extensibility Roadmap
+
+The architecture supports straightforward expansion.
+
+Planned enhancements:
+
+Minimax AI opponent
+
+Alpha-beta pruning optimization
+
+Graphical interface (Qt / SDL / web frontend)
+
+Persistent match history
+
+Configurable board sizes
+
+Network multiplayer
+
+Unit test framework integration (GoogleTest)
+
+CMake build system
+
+Why This Project Exists
+
+This project was developed to practice building a system that:
+
+cleanly separates domain logic from control logic
+
+remains testable at the component level
+
+mirrors real software architecture patterns
+
+scales without structural refactoring
+
+Rather than focusing only on gameplay, the emphasis is on engineering structure and correctness.
+
+Author
+
+Yilan Ruan
+GitHub: https://github.com/YilanRuan
