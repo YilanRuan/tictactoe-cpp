@@ -68,3 +68,64 @@ This mirrors real-world game engine architecture where state and control layers 
 ---
 
 ## Class Relationship
+User Input
+↓
+TicTacToeGame (control flow)
+↓
+TicTacToeBoard (state + rules)
+↓
+Game Result
+
+
+The game controller never directly manipulates board internals — it interacts through a defined interface.
+
+---
+
+## Testing Strategy
+
+Game logic and gameplay control are tested independently.
+
+Test modules validate:
+
+- Legal and illegal move handling
+- Win condition detection
+- Draw state detection
+- Turn sequencing correctness
+- State transitions
+
+Separating rule logic from control flow allows deterministic testing of board behavior without running full gameplay loops.
+
+---
+
+## Features
+
+- Two-player turn-based gameplay
+- Input validation with rejection of illegal moves
+- Automatic win detection across rows, columns, and diagonals
+- Draw detection
+- Deterministic game-state evaluation
+- Modular object-oriented architecture
+- Independent logic testing
+
+---
+
+## Engineering Concepts Demonstrated
+
+- Object-oriented design
+- Encapsulation and abstraction
+- Separation of concerns
+- Responsibility-driven class design
+- State machine reasoning
+- Deterministic rule evaluation
+- Modular architecture
+- Testable system design
+
+---
+
+## Build and Run
+
+### g++ (Linux / macOS / MinGW)
+
+Compile:
+```bash
+g++ *.cpp -o tictactoe
